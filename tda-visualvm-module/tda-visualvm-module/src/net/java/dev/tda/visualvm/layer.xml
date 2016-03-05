@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Help">
+            <file name="net-java-dev-tda-visualvm-HelpOverviewAction.instance"/>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Help">
+            <file name="net-java-dev-tda-visualvm-HelpOverviewAction-separatorBefore.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+                <attr name="position" intvalue="1000"/>
+            </file>
+            <file name="net-java-dev-tda-visualvm-HelpOverviewAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Help/net-java-dev-tda-visualvm-HelpOverviewAction.instance"/>
+                <attr name="position" intvalue="1100"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="OptionsDialog">
+        <file name="net-java-dev-tda-visualvm-VisualvmOptionsCategory.instance"/>
+    </folder>
+</filesystem>

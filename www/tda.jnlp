@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jnlp spec="1.0" codebase="https://tda.dev.java.net/">
+   <information>
+      <title>TDA - Thread Dump Analyzer 2.2</title>
+      <vendor>Ingo Rockel</vendor>
+      <homepage href="http://tda.dev.java.net/"/>
+      <icon href="splash.png" kind="splash"/>
+      <icon href="tda.gif" />
+      <offline-allowed/>
+      <shortcut online="false"> 
+         <desktop/> 
+         <menu submenu="TDA - Thread Dump Analyzer"/> 
+      </shortcut> 
+      <update check="background" policy="prompt-update" />
+   </information>
+   <resources>
+      <j2se version="1.4.2+" href="http://java.sun.com/products/autodl/j2se" max-heap-size="512m"/>
+      <jar href="tda-2.2.jar"/>
+      <jar href="jhall.jar"/>
+   </resources>
+   <application-desc main-class="com.pironet.tda.TDA"/>
+   <security>
+      <all-permissions/>
+   </security>
+</jnlp>
+

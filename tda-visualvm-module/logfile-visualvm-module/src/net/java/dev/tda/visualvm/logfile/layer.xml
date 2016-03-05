@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Other">
+            <file name="net-java-dev-tda-visualvm-logfile-AddLogfileAction-alwaysEnabled.instance">
+                <attr name="instanceCreate" methodvalue="net.java.dev.tda.visualvm.logfile.AddLogfileAction.alwaysEnabled"/>
+            </file>
+        </folder>        
+    </folder>
+    <folder name="Menu">
+        <folder name="File">
+            <file name="net-java-dev-tda-visualvm-logfile-AddLogfileAction-alwaysEnabled.shadow">
+                <attr name="originalFile" stringvalue="Actions/Other/net-java-dev-tda-visualvm-logfile-AddLogfileAction-alwaysEnabled.instance"/>
+                <attr name="position" intvalue="450"/>
+            </file>
+        </folder>        
+    </folder>
+    <folder name="Toolbars">
+        <folder name="File">
+            <file name="net-java-dev-tda-visualvm-logfile-AddLogfileAction-alwaysEnabled.shadow">
+                <attr name="originalFile" stringvalue="Actions/Other/net-java-dev-tda-visualvm-logfile-AddLogfileAction-alwaysEnabled.instance"/>
+                <attr name="position" intvalue="450"/>
+            </file>
+        </folder>
+    </folder>    
+    <folder name="VisualVM">
+        <folder name="ExplorerPopupSelection">
+            <file name="net-java-dev-tda-visualvm-logfile-AddLogfileAction-selectionAware.instance">
+                <attr name="instanceCreate" methodvalue="net.java.dev.tda.visualvm.logfile.AddLogfileAction.selectionAware"/>
+                <attr name="position" intvalue="0"/>
+                <attr name="default" boolvalue="true"/>
+            </file>
+        </folder>
+        <folder name="ExplorerPopupNoSelection">
+            <file name="net-java-dev-tda-visualvm-logfile-AddLogfileAction-alwaysEnabled.shadow">
+                <attr name="originalFile" stringvalue="Actions/Other/net-java-dev-tda-visualvm-logfile-AddLogfileAction-alwaysEnabled.instance"/>
+                <attr name="position" intvalue="1000"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>

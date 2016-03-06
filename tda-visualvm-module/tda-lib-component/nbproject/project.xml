@@ -12,6 +12,7 @@
                 <package>com.pironet.tda.jconsole</package>
                 <package>com.pironet.tda.utils</package>
                 <package>com.pironet.tda.utils.jedit</package>
+                <package>net.java.dev.tda</package>
             </public-packages>
             <class-path-extension>
                 <runtime-relative-path>ext/tda.jar</runtime-relative-path>

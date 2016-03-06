@@ -34,8 +34,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import org.openide.util.ImageUtilities;
 import org.openide.util.NbBundle;
-import org.openide.util.Utilities;
 
 /**
  * tda main display view for visualvm.
@@ -51,7 +51,7 @@ public class TDAView extends DataSourceView {
     private TDA tdaPanel = null;
     
     public TDAView(DataSource logContent) {
-        super(logContent, "Thread Dump Analyzer", new ImageIcon(Utilities.loadImage(IMAGE_PATH, true)).getImage(), 60, false);
+        super(logContent, "Thread Dump Analyzer", new ImageIcon(ImageUtilities.loadImage(IMAGE_PATH, true)).getImage(), 60, false);
 
         this.logContent = (Snapshot) logContent;
     }

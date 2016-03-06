@@ -27,8 +27,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import javax.swing.ImageIcon;
 import org.openide.util.Exceptions;
+import org.openide.util.ImageUtilities;
 import org.openide.util.NbBundle;
-import org.openide.util.Utilities;
 
 /**
  *
@@ -36,12 +36,12 @@ import org.openide.util.Utilities;
  */
 public class LogfileDumpView extends DataSourceView {
     private static final String IMAGE_PATH = "net/java/dev/tda/visualvm/logfile/resources/logfile.gif";  // NOI18N
-    private Logfile logfile;
+    private final Logfile logfile;
     private TDA tdaPanel;
     private LogPanel logPanel = null;
     
     public LogfileDumpView(Logfile logfile) {
-        super(logfile, NbBundle.getMessage(LogfileDumpView.class, "LBL_DumpView"), new ImageIcon(Utilities.loadImage(IMAGE_PATH, true)).getImage(), 0, false);    // NOI18N
+        super(logfile, NbBundle.getMessage(LogfileDumpView.class, "LBL_DumpView"), new ImageIcon(ImageUtilities.loadImage(IMAGE_PATH, true)).getImage(), 0, false);    // NOI18N
         this.logfile = logfile;
     }
 

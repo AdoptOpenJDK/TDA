@@ -26,6 +26,7 @@ import java.awt.event.ActionEvent;
 import java.io.File;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
+import org.openide.util.ImageUtilities;
 import org.openide.util.NbBundle;
 import org.openide.util.Utilities;
 
@@ -36,7 +37,7 @@ import org.openide.util.Utilities;
 public class AddLogfileAction extends SingleDataSourceAction<LogfileDataSource> {
     
     private static final String ICON_PATH = "net/java/dev/tda/visualvm/logfile/resources/logfileadd.gif";    // NOI18N
-    private static final Image ICON =  Utilities.loadImage(ICON_PATH);
+    private static final Image ICON =  ImageUtilities.loadImage(ICON_PATH);
     private static JFileChooser fc = null;
     
     private boolean tracksSelection = false;

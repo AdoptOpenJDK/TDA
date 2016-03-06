@@ -21,7 +21,7 @@ package net.java.dev.tda.visualvm.logfile;
 
 import com.sun.tools.visualvm.core.snapshot.SnapshotDescriptor;
 import java.awt.Image;
-import org.openide.util.Utilities;
+import org.openide.util.ImageUtilities;
 
 /**
  * logfile descriptor for specified logfile
@@ -29,7 +29,7 @@ import org.openide.util.Utilities;
  */
 public class LogfileDescriptor extends SnapshotDescriptor<Logfile> {
 
-    private static final Image ICON = Utilities.loadImage("net/java/dev/tda/visualvm/logfile/resources/logfile.gif", true);  // NOI18N
+    private static final Image ICON = ImageUtilities.loadImage("net/java/dev/tda/visualvm/logfile/resources/logfile.gif", true);  // NOI18N
 
     public LogfileDescriptor(Logfile logFile) {
         super(logFile, ICON);

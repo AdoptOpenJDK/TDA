@@ -24,8 +24,8 @@ import com.sun.tools.visualvm.core.datasource.descriptor.DataSourceDescriptor;
 import com.sun.tools.visualvm.core.datasource.descriptor.DataSourceDescriptorFactory;
 import com.sun.tools.visualvm.core.model.AbstractModelProvider;
 import java.awt.Image;
+import org.openide.util.ImageUtilities;
 import org.openide.util.NbBundle;
-import org.openide.util.Utilities;
 
 /**
  * Logfile node in explorer view.
@@ -52,7 +52,7 @@ public class LogfileDataSource extends DataSource {
     
     
     private static class LogfileDataSourceDescriptor extends DataSourceDescriptor {
-        private static final Image NODE_ICON = Utilities.loadImage("net/java/dev/tda/visualvm/logfile/resources/logfiles.gif", true);    // NOI18N
+        private static final Image NODE_ICON = ImageUtilities.loadImage("net/java/dev/tda/visualvm/logfile/resources/logfiles.gif", true);    // NOI18N
 
         LogfileDataSourceDescriptor() {
             super(LogfileDataSource.sharedInstance(), NbBundle.getMessage(LogfileDumpView.class, "ExplorerNode_Name_Logfiles"), null, NODE_ICON, 20, EXPAND_ON_EACH_NEW_CHILD);   // NOI18N

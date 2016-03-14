@@ -26,6 +26,7 @@ import com.sun.tools.visualvm.core.model.AbstractModelProvider;
 import java.awt.Image;
 import org.openide.util.ImageUtilities;
 import org.openide.util.NbBundle;
+import org.openide.util.Utilities;
 
 /**
  * Logfile node in explorer view.

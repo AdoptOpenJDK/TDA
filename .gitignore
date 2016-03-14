@@ -3,10 +3,17 @@
 /tda-netbeans-module/build/
 /tda-visualvm-module/build/
 /tda/dist/
+/tda/build/
 /tda-visualvm-module/logfile-visualvm-module/nbproject/private/
 /tda-visualvm-module/tda-visualvm-module/nbproject/private/
 /tda-visualvm-module/logfile-visualvm-module/build/
 /tda-visualvm-module/tda-lib-component/build/
 /tda-visualvm-module/tda-lib-component/release/
 /tda-visualvm-module/tda-visualvm-module/build/
+tda-visualvm-module/logfile-visualvm-module/release/
+/tda-visualvm-module/tda-visualvm-module/nbproject/private/
 /tda-netbeans-module/lib/build/
+/tda-netbeans-module/component/build/
+/tda-netbeans-module/lib/build/
+/tda-netbeans-module/lib/release/
+

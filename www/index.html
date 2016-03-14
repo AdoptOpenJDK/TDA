@@ -1,0 +1,248 @@
+<html>
+<body>
+<table width="100%">
+<tr>
+<td align=right><a class="toolbar" href="#news">News</a> |
+<a class="toolbar" href="#launch">Launch TDA</a> |
+<a class="toolbar" href="#background">Background</a> |
+<a class="toolbar" href="#summary">Project Summary</a> |
+<a class="toolbar" href="#screenshots">Screenshots</a> |
+<a class="toolbar" href="#download">Download</a>
+</td></tr>
+</table>
+<div id="projecthome" class="app"> 
+<center><img src="logo.png" border=0></center>
+<p align="right"><script type="text/javascript" src="http://www.ohloh.net/projects/2614/widgets/project_partner_badge"></script></p>
+
+<h2><a name="news">News</a></h2>
+<p>More News in my <a href="http://www.jroller.com/page/dumpster">weblog</a>.</p>
+<p><b>[2010/02/06]</b> 2.2 release of TDA available. This release includes:
+<ul>
+    <li>Implemented Issue 9: now parked threads using java.lang.concurrent are recognized.</li>
+    <li>Fixed Issue 26: no more lost filters in categories. Thanks to Robert Whitehurst.</li>
+    <li>Fixed Issue 27: Improved memory footprint, now parsed thread dump use about 20% less memory.</li>
+    <li>Fixed Issue 29: Closing of log files now works on windows.</li>
+    <li>Fixed Issue 30: Opening from welcome page now works on windows.</li>
+    <li>Fixed HTML if JDK 5.x is used.</li>
+    <li>Small Adjustments and Fixes.</li>
+</ul>
+</p>
+<p><b>[2009/01/07]</b> 2.1 release of TDA available. This release includes:
+<ul>
+    <li>Added last line parsed to the error message if an error occurs during parsing.</li>
+    <li>Fixed Issue 22, check for null if diffing dumps.</li>
+    <li>Fixed Issue 23, fixed parsing of remote VisualVM Dumps.</li>
+    <li>Fixes Issue 24, fixed parsing of monitors in VisualVM Dumps.</li>
+    <li>Bugfixing of other small bugs.</li>
+</ul>
+</p>
+<p><b>[2008/10/05]</b> 2.0 release of TDA available. This release includes:
+    <ul>
+        <li>Tool now is available as VisualVM plugin.</li>
+        <li>Skip broken thread dumps.</li>
+        <li>Custom Thread Categories.</li>
+        <li>New Welcome Screen.</li>
+        <li>Small Adjustments to support SAP JVM Dumps (slightly modified from SUN Dumps).</li>
+        <li>Small Adjustments to support HP JVM DUmps (slightly modified from SUN Dumps).</li>
+        <li>Icons of monitors with high contention now have a red background (issue 13).</li>
+        <li>Multiple Selection of Threads (issue 11).</li>
+        <li>Stack line count is now also set in long running thread result (issue 19).</li>
+        <li>Read heap information from Sun JDK 1.6 Dumps and display them.</li>
+        <li>Thread Dumps or logfiles can be pasted from clipboard (issue 20).</li>
+        <li>Internationalisation (only english available so far, not finished yet).</li>
+        <li>Extended Help, now uses javahelp.</li>
+        <li>General Bugfixing.</li>
+    </ul>
+    A more in depth release announcement can be found in my <a href="http://www.jroller.com/page/dumpster">blog</a>.
+</p>
+<p><b>[2008/04/18]</b> Updated TDA Plugin Preview for VisualVM Beta2, available in the 
+    <a href="/servlets/ProjectDocumentList?folderID=8765">Document and files</a> section. 
+    I will try to have an improved and better integrated plugin ready for the VisualVM Release Candidate
+    somewhere around JavaOne.
+</p>
+<p><b>[2008/03/12]</b> Updated TDA Plugin Preview for VisualVM Beta, available in the 
+    <a href="/servlets/ProjectDocumentList?folderID=8765">Document and files</a> section.
+</p>
+<p><b>[2008/02/19]</b> Plugin Preview for VisualVM Milestone 3 available in the 
+    <a href="/servlets/ProjectDocumentList?folderID=8765">Document and files</a> section.
+</p>
+<p><b>[2008/01/21]</b> 1.6 release of TDA available. This release includes:
+    <ul>
+        <li>Added new filter rule "stack line count greater as".</li>
+        <li>Added clipboard operation in logfile view.</li>
+        <li>Enhanced Monitor View, added expand all nodes and sort by thread count to popup.</li>
+        <li>Added View operations for root tree.</li>
+        <li>Added Drag and Drop for new files to open.</li>
+        <li>Threads are now displayed in a table, the thread ids and native ids are 
+        transferred from hexadecimal to decimal.</li>
+        <li>Date parsing for Sun JDK 1.6 time stamps is added as default regex.</li>
+        <li>Bugfixed and reworked long running thread detection.</li>
+        <li>Extended Help Overview.</li>
+        <li>General Bugfixing.</li>
+    </ul>
+    You find more detailed information concerning this release in 
+    <a href="http://www.jroller.com/dumpster/entry/version_1_6_of_tda">my blog</a>.
+    <br/><b>[Update]</b> Changed ZIP to unpack into a subdirectory.
+</p>
+<p><b>[2007/11/06]</b> 1.5 release of TDA available. This release includes: 
+    <ul>
+       <li>Added jconsole plugin support, TDA can now be used as jconsole plugin.</li>
+       <li>Added ability to request thread dumps via JMX if running as jconsole plugin.</li>
+       <li>JMX Dumps can be saved into logfile for later offline usage.</li>
+       <li>Session now can be stored to disk (and loaded again).</li>
+       <li>Extended help overview.</li>
+       <li>Major code cleanup.</li>
+       <li>Improved memory footprint.</li>
+       <li>Added splash-screen (JDK 1.6 only).</li>
+       <li>Bugfixing.</li>
+    </ul>
+    </p>
+    See <a href="http://www.jroller.com/dumpster/entry/tda_thread_dump_analyzer_version">my blog</a> for further informationen.
+<p><b>[2007/10/30]</b> Beta 1.5 release of TDA available. This release includes: 
+    <ul>
+       <li>Added jconsole plugin support, TDA can now be used as jconsole plugin.
+       <li>Added ability to request thread dumps via JMX if running as jconsole plugin.
+       <li>JMX Dumps can be saved into logfile for later offline usage.
+    </ul>
+See <a href="http://www.jroller.com/dumpster/entry/tda_as_jconsole_plugin">my blog</a> for further informationen.
+</p>
+<p><b>[2007/10/26]</b> 1.4 release of TDA done. This release includes: 
+    <ul>
+       <li>Full logfile is added as node (loaded up to specified size).
+       <li>Added Thread Dump navigation into logfile.
+       <li>Improved Deadlock analysis, additional hints concerning deadlocks found be JVM.
+       <li>Fixed Issue 5.
+       <li>Added toolbar (can be switched off).
+       <li>Improved GTK Display for recent JDKs.
+       <li>Bugfixing.</li>
+    </ul>
+</p>
+<p><b>[2007/06/05]</b> 1.3 release of TDA done. This release includes: 
+    <ul>
+        <li>Improved Dump navigation.</li>
+        <li>Added context sensitive information about dumps.</li>
+        <li>Added jstack support.</li>
+        <li>Refactored Monitor-Display (threads now are only displayed once).</li>
+        <li>Bugfixing.</li>
+    </ul>
+</p>
+
+<p><b>[2007/05/07]</b> 1.2 release of TDA finally done. This release includes: 
+<ul>
+<li>Ability to filter the threads display to be able to ignore e.g. idle threads.</li>
+<li>Improved gui layout for better navigation (three pane view instead of two).</li>
+<li>Added 1.5 and 1.6 parsing of thread dumps.</li>
+<li>Opened Logfiles can be closed now.</li>
+<li>Reworked help.</li>
+<li>Links in help now open in external browser.</li>
+<li>Added Forum link to help menu.</li>
+<li>Improved GUI with better native Integration.</li>
+<li>Added Webstart Deployment for easy installation.</li>
+<li>Some font hacks to use GTK as native L&F on Linux and JDK 1.6</li>
+<li>Bugfixes.</li>
+</ul>
+</p>
+<p><b>[2007/04/30]</b> Now there is a Java WebStart enabled version of TDA 1.2 (Beta). Just click on the Webstart Launch Button on this Page.</p>
+<p><b>[2007/04/27]</b> Dining Philosphers Problem visualized using tda: <a href="http://www.myloadtest.com/java-thread-dump/">My Load Test - Java Thread Dump</a>.</p>
+<p><b>[2007/04/12]</b> Ongoing development for 1.2: Just a short note: There is a nearly finished 1.2 release in the repository, with 1.5 parsing support, better window layout, filtering mechanism for threads and other small improvements and of course bug fixes. But it is still buggy and because lack of time I haven't finished it yet.</p>
+<p><b>[2006/08/14]</b> Final Release of 1.1, changes to 1.0: 
+<ul>
+<li>Ability to open more than one logfile at a time,</li>
+<li>history of recently opened files, </li>
+<li>multiple regex for date parsing in settings (but only one active), </li>
+<li>bugfixes.</li>
+</ul></p>
+<p><b>[2006/04/24]</b> Final Release of 1.0, changes to Beta: 
+<ul>
+<li>regex for timestamps now working, </li>
+<li>long thread run detection, bugfixes.</li>
+</ul></p>
+<p><b>[2006/03/29]</b> Fixed beta (updated download file) to work with JDK 1.4 and some other small bug fixes.</p>
+
+<h2><a name="launch">Launch TDA</a></h2>
+<p><a href="tda.jnlp"><img border="0" src="webstart.gif"></a> Launch the current TDA 2.0 release from the browser (requires Java Webstart). On Windows it will automatically create a shortcut on your desktop and in your Windows menu. Unfortuneately there is no way to tell Java Webstart to ask first if you want to install the shortcut.</p>
+
+<h2><a name="background">Background</a></h2>
+<p>There is a quite nice Thread Dump Analysis Tool for Websphere environments but which only works with IBM JDKs. Motivation for
+this little tool was to have something similar for Sun JDKs. See <a href="http://wiki.java.net/bin/view/Javapedia/ThreadDump">JavaPedia: ThreadDump</a> for links.</p>
+
+<h2><a name="summary">Project Summary</a></h2>
+<p>The <b>TDA</b> Thread Dump Analyzer for Java is a small Swing GUI for analyzing Thread Dumps and Heap Information generated by the Sun Java VM (currently tested with 1.4.x, 1.5.0_x and 1.6.0_x releases). It parses the thread dumps and class histograms from a provided log file. TDA needs at least Java 1.4.2_x to run.</p>
+<p>
+It provides statistic informations about the found thread dumps, gives information about locked monitors and waiting threads. It can diff between threads to look for similarities and has a "long-running-thread" detection. It also provides overview of heap objects at a thread dump, if class histogram was logged.</p>
+<p>
+Features are in detail:
+<ul>
+<li>Parsing all thread dumps of a log file, using a specified regular expression for log file time stamps (thread dumps don't have any date information by default), displaying them in a tree.
+<li>Display of statistic data about the found thread dumps, display of monitors, waiting, sleeping and locking threads,
+<li>dumps provide links in context for easy dump navigation,
+<li>integrated class histogram analysis for a specific thread dump (using the -XX:+PrintClassHistogram option of the VM), can also be parsed from a second file, if loggc-Option was used (to log garbage collections to a different log file).
+<li>displays deadlock information from the thread dump,
+<li>displays hints about possible problems in the analyzed dumps and
+<li>ability to add additional logfiles (useful if logfiles are rotated) or open many at once.
+<li>Session handling to be able to reopen a tda session.
+<li>Integration into JConsole as plugin.
+<li>A <a href="http://visualvm.dev.java.net">VisualVM</a> plugin.</li>
+</ul>
+</p>
+<p>
+The emphasis of the TDA is to provide analysis support of offline information gathered from production environments.</p>
+
+<p>In addition to TDA you might find the <a href="http://www.tagtraum.com/gcviewer.html">GCViewer</a> helpful. It parses the output of the garbage collector from a loggc file and displays it graphically, so you can analyse the memory usage over the time.</p>
+
+<p>TDA includes a help overview giving detailed information on how to use the tool.</p>
+
+<h2><a name="screenshots">Screenshots</a></h2>
+<p><b>2.0 Final</b><br>
+<table><tr>
+        <td><table><tr><td>
+        <a href="./welcome.png"><img src="./welcome-small.png"></a></td></tr>
+        <tr><td><center><i>Welcome Screen</i></center></td></tr></table></td>
+        <td><table><tr><td>
+            <a href="./info.png"><img src="./info-small.png"></a></td></tr>
+        <tr><td><center><i>Thread Dump Infos</i></center></td></tr></table></td>
+        <td><table><tr><td>
+            <a href="./threaddump.png"><img src="./threaddump-small.png"></a></td></tr>
+        <tr><td><center><i>Thread Dump View</i></center></td></tr></table></td>
+</tr><tr>
+    <td><table><tr><td>
+        <a href="./histogram.png"><img src="./histogram-small.png"></a></td></tr>
+        <tr><td><center><i>Class Histogram</i></center></td></tr></table></td>
+    <td><table><tr><td>
+        <a href="./jconsole.png"><img src="./jconsole-small.png"></a></td></tr>
+        <tr><td><center><i>JConsole Plugin</i></center></td></tr></table></td>
+    <td><table><tr><td>
+        <a href="./visualvm.png"><img src="./visualvm-small.png"></a></td></tr>
+        <tr><td><center><i>VisualVM Plugin</i></center></td></tr></table></td>
+</tr></table>
+
+
+<h2><a name="download">Download</a></h2>
+<p>
+You can either download the 2.2 Final release in the <a href="/servlets/ProjectDocumentList">files</a> section or install it through Java Webstart, which is prefered (see <a href="tda.jnlp">link</a> above). Look at the usage overview in the help menu for further information. Start scripts in zip distribution are quite basic, look inside them, you might need to adjust the memory settings if you want to parse very huge log files (>250MB).</p>
+
+<h2>Participation</h2>
+<p>Please reports problems, make suggestions and ask questions in the <a href="/servlets/ForumMessageList?forumID=1967">discussion forum</a>.</p>
+
+<p><i>Last Change: $Id: index.html,v 1.81 2010-11-22 14:25:14 irockel Exp $</i></p>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=2795907; 
+var sc_invisible=0; 
+var sc_partition=28; 
+var sc_security="f7e47b11"; 
+</script>
+
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c29.statcounter.com/2795907/0/f7e47b11/0/" alt="website metrics" /></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+<!-- Google Analytics 
+<script src="https://ssl.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2409116-1";
+urchinTracker();
+</script>
+ end Google Analytics -->
+</body>
+</html>

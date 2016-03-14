@@ -25,6 +25,7 @@ import org.netbeans.spi.options.OptionsCategory;
 import org.netbeans.spi.options.OptionsPanelController;
 import org.openide.util.ImageUtilities;
 import org.openide.util.NbBundle;
+import org.openide.util.Utilities;
 
 public final class VisualvmOptionsCategory extends OptionsCategory {
 

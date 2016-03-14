@@ -1028,31 +1028,43 @@ public class SunJDKParser extends AbstractDumpParser {
               
         if ( threadName.find() && threadAttributes.find()) {
             tokens = new String[7];                          
+
+            tokens[0] = name.substring(1, name.lastIndexOf('"'));
             tokens[ 0] = threadName.group( 1).trim();
+
             
             tokens[ 1] = ( threadAttributes.group( 1) == null) ? "Task" : "Daemon";
             
             tokens[ 2] = threadAttributes.group( 2);
             if ( tokens[ 2] == null)
                 tokens[ 2] = threadAttributes.group( 3);
+
             
             tokens[ 3] = threadAttributes.group( 4);
             if ( tokens[ 3] != null) {
                 tokens[ 3] = String.valueOf( Long.parseLong(tokens[ 3], 16));
             }
+
             
             tokens[ 4] = threadAttributes.group( 5);
+                        strippedToken.indexOf("nid=") - 1), 16));
             if ( tokens[ 4] != null) {
                 tokens[ 4] = String.valueOf( Long.parseLong(tokens[ 4], 16));
             }
+
             
             tokens[ 5] = threadAttributes.group( 6);
+
                 
             tokens[ 6] = threadAttributes.group( 7);            
             if ( tokens[ 6] == null)
+                            strippedToken.indexOf(" ", strippedToken.indexOf("nid=")));
                 tokens[ 6] = "<no address range>";
             else
                 tokens[ 6] = "[0x" + tokens[ 6].trim() + "]"; 
+                            strippedToken.indexOf(" ", strippedToken.indexOf("nid=")));
+                    tokens[4] = nidToken;
+                }
 
 //        if (name.indexOf("prio") > 0) {
 //            tokens = new String[7];

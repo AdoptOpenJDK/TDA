@@ -51,6 +51,8 @@
                 </dependency>
             </module-dependencies>
             <public-packages>
+            <class-path-extension>
+                <runtime-relative-path>ext/tda.jar</runtime-relative-path>
                 <package>net.java.dev.tda.visualvm.logfile</package>
             </public-packages>
         </data>

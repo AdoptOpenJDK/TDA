@@ -4,6 +4,5 @@ OpenIDE-Module: net.java.dev.tda.visualvm.logfile/4
 OpenIDE-Module-Install: net/java/dev/tda/visualvm/logfile/Installer.class
 OpenIDE-Module-Localizing-Bundle: net/java/dev/tda/visualvm/logfile/Bundle.properties
 OpenIDE-Module-Specification-Version: 2.2
-OpenIDE-Module-Install: net/java/dev/tda/visualvm/logfile/Install.class
 OpenIDE-Module-Layer: net/java/dev/tda/visualvm/logfile/layer.xml
 
